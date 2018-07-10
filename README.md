@@ -2,7 +2,11 @@
 
 Tiny Session capable Server vulnerable to XSS for testing purposes.
 
-# Run from Docker
+# TL;DR
+
+- `docker run -ti --rm -p 127.0.0.1:3000:3000 secf00tprint/victim_session_xss_server:latest`
+
+# Build from Dockerfile
 
 - `docker build -t victim_session_xss_server .`
 - `docker run -ti --rm -p 127.0.0.1:3000:3000 victim_session_xss_server`
