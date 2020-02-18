@@ -22,7 +22,7 @@ function checkVerified(req, res,next) {
 
 function writeStandardPageTop(res){
     res.setHeader("X-XSS-Protection","0");
-    res.setHeader("Access-Origin-Allow-Origin","*")
+    res.setHeader("Access-Control-Allow-Origin","*")
     res.write("" +
         "<html>" +
         "<head>" +
