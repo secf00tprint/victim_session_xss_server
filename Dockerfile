@@ -1,8 +1,7 @@
-FROM node:4.4.3
+FROM node:15.11.0
 
 LABEL maintainer="secf00tprint"
 
-RUN useradd -ms /bin/bash node
 COPY serverfiles/ /home/node/serverfiles/
 RUN chown -R node /home/node/serverfiles
 RUN cd /home/node/serverfiles && npm install
